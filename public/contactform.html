@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepeatMail</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="contact-form">
+            <h2>RepeatMail</h2>
+            <input type="text" id="nom" placeholder="LastName">
+            <br/>
+            <input type="text" id="prenom" placeholder="FirstName">
+            <br/>
+            <input type="email" id="email" placeholder="TO (Email)">
+            <br/>
+            <input type="email" id="email2" placeholder="FROM (Email)">
+            <br/>
+            <input type="text" id="sujet" placeholder="Subject">
+            <br/>
+            <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <br/>
+            <div class="input-mail">
+                <label  style="word-wrap:break-word" id="labelten">
+                    <input id="tenminutes"  type="checkbox" value="10 minutes" onclick="changeCheck()"/>10 seconds
+                 </label>
+                 <label  style="word-wrap:break-word">
+                    <input id="twentyminutes"  type="checkbox" value="20 minutes" onclick="changeCheck()"/>20 seconds
+                 </label>
+                 <label  style="word-wrap:break-word">
+                    <input id="thirtyminutes"  type="checkbox" value="30 minutes" onclick="changeCheck()"/>30 seconds
+                 </label>
+            </div>
+            <input type="submit" class="submit" value="Send a message">
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
